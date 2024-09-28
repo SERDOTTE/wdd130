@@ -1,26 +1,46 @@
+:root {
+    --primary-color: steelblue;
+    --secondary-color: #eee;
+    --font-family: 'Roboto', sans-serif;
+    --primary-font-size: 20px;
+    --principal-text-align: justify;
+    background-color: #f0f0f0;
+}
+
 main {
     max-width: 840px;
+    font-family: var(--font-family);
+    font-size: var(--primary-font-size);
 }
 
 nav {
-    background-color: steelblue;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: steelblue;
+    color: var(--primary-color);
+}
+
+.apresentation {
+    text-align: var(--principal-text-align);
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--primary-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -34,14 +54,16 @@ aside {
     margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1em;
-    background-color: #eee;
+    background-color: var(--secondary-color);
     color: #333;
-    text-align: center;
+    text-align: var(--principal-text-align)
 }
 
 aside img {
+    display: block;
     width: 200px;
     height: auto;
+    margin: 0 auto;
 }
 
 footer {

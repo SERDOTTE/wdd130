@@ -49,6 +49,7 @@ nav a {
     border-radius: 5px;
     margin: 0 -2px; 
     box-sizing: border-box;
+    color: white; 
 }
 
 nav a:hover {
@@ -79,6 +80,8 @@ nav a:hover {
 }
 
 .hero h1 {
+    position: absolute;
+    top: 0.1px;
     font-size: 2.0rem;
     z-index: 1; 
     text-align: center; 
@@ -93,14 +96,15 @@ nav a:hover {
 }
 
 .article {
+    position: absolute;
     display: flex;
     align-items: center;
     background-color: rgba(128, 160, 224, 0.7); 
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 10px; 
     z-index: 2; 
     max-width: 1000px;
-    margin: 20px;
+    margin-top: 5px;
 }
 
 .article__image {

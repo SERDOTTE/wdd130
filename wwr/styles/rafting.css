@@ -112,7 +112,7 @@ article p {
     font-size: 1.5rem;
 }
 
-.history, section {
+.history, .adventure {
     flex-direction: column;
 }
 
@@ -125,16 +125,45 @@ article p {
     background-color: var(--accent2-color);
 }
 
-section {
+.adventure {
     background-color: var(--accent2-color);
 }
 
-section img {
+.adventure img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 10px 0;
 }
+
+.footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 10px;
+    font-family: var(--paragraph-font);
+    font-size: 0.7rem;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 4px; 
+}
+
+.sociallinks a {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 40px; 
+    height: 40px; 
+    background-color: #219ebc; /
+}
+
+.face__logo, .twitter__logo, .insta__logo {
+    width: 30px; 
+}
+
 
 
 

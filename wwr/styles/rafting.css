@@ -65,7 +65,7 @@ nav a:hover {
     align-items: center;
     color: white; 
     padding: 0.5px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: var(--paragraph-font);
 }
 
 .hero__image {
@@ -100,6 +100,7 @@ nav a:hover {
     border-radius: 10px; 
     z-index: 2; 
     max-width: 1000px;
+    margin: 20px;
 }
 
 .article__image {
@@ -114,19 +115,21 @@ article p {
 
 .history, .adventure {
     flex-direction: column;
+    background-color: var(--accent2-color);
 }
 
+.history h2, .adventure h2 {
+    font-size: 2.0rem;
+    z-index: 1; 
+    text-align: center;
+    font-family: var(--paragraph-font); 
+    color: white; 
+}    
 .history p, section p {
     max-width: 800px;
     text-align: center;
-}
-
-.history {
-    background-color: var(--accent2-color);
-}
-
-.adventure {
-    background-color: var(--accent2-color);
+    font-family: var(--paragraph-font); 
+    color: rgb(0, 0, 0); 
 }
 
 .adventure img {
@@ -155,13 +158,14 @@ article p {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    width: 40px; 
-    height: 40px; 
-    background-color: #219ebc;
+    width: 30px; 
+    height: 30px; 
+    background-color: rgba(128, 160, 224);
+    border: 1px solid rgba(128, 160, 224);
 }
 
 .face__logo, .twitter__logo, .insta__logo {
-    width: 30px; 
+    width: 20px; 
 }
 
 

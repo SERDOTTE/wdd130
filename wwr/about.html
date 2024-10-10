@@ -11,20 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
-<body>
-    <header>
+<body class="container">
+    <header class="header">
         <img class="header__image" src="images/header_image.jpg" alt="banner rafting">
-        <img class="logo__image" src="images/logo.jpeg" alt="Rafting Adventures Company Logo">
-        <div>
-            <nav>
+            <img class="logo__image" src="images/logo.jpeg" alt="Rafting Adventures Company Logo">
+            <div class="header__nav">
+                <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="trips.html">Trips</a>
                 <a href="contact.html">Contact Us</a>
-            </nav>
-        </div>
-    </header>
-    <main>
+                </nav>
+            </div>
+        </header>
+    <main class="main">
         <div class="hero">
             <img class="hero__image" src="images/hero_image.jpg" alt="backgroun image">
             <h1>Rapids Rafting Company</h1>
@@ -37,15 +37,21 @@
         </div>
         <section class="history">
             <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor explicabo rem non distincti.</p>
+            <div class="history__content">
+                <p class="history__p">For over a decade, we have been the reference in exciting adventures and unforgettable rafting experiences. Our commitment is to provide moments of pure fun and adrenaline for our customers. With an experienced team passionate about what they do, we guarantee safety, professionalism and an environment Relaxed for all adventurers. Whether you are a beginner or an experienced enthusiast, our rafting trips are designed to offer exciting challenges and stunning scenery, creating memories that will last forever. Join us and discover the true meaning of adventure and fun. in the water!</p>
+                <img class="history__image" src="images/history_image.jpg" alt="history image">
+                <p class="history__p"> Our rafting company stands out as a reliable and exciting choice for those seeking water adventures. From the earliest days to the present, we are proud to offer exciting and safe moments for our customers, providing unique experiences amid lush nature. Our highly qualified and passionate rafting team is always ready to ensure that each trip is a journey full of fun, learning and overcoming. Come be part of our family of adventurers and embark on an exciting journey that you will never forget!</p>
+            </div>
         </section>
         <section class="adventure">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/rafting_01.jpg" alt="rafting scene">
-            <img src="images/rafting_02.jpg" alt="rafting scene">
-            <img src="images/rafting_03.jpg" alt="rafting scene">
-            <img src="images/rafting_04.jpg" alt="rafting scene">
-            <img src="images/rafting_05.jpg" alt="rafting scene">
+            <div class="adventure__images__position">
+                <img class="adv__image" src="images/rafting_01.jpg" alt="rafting scene">
+                <img class="adv__image" src="images/rafting_02.jpg" alt="rafting scene">
+                <img class="adv__image" src="images/rafting_03.jpg" alt="rafting scene">
+                <img class="adv__image" src="images/rafting_04.jpg" alt="rafting scene">
+                <img class="adv__image" src="images/rafting_05.jpg" alt="rafting scene">
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -56,6 +62,5 @@
             <a href="https://instagram.com"><img class="insta__logo" src="images/instagram.webp" alt="Instagram"></a>
         </nav>
     </footer>
-    
 </body>
 </html>

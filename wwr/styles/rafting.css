@@ -171,6 +171,11 @@ h2 {
     border: 1px solid #023047;
 }
 
+figcaption {
+    padding: 3px;
+    text-align: center;
+}
+
 .history__p {
     flex: 1;
     padding: 10px;
@@ -193,8 +198,9 @@ h2 {
     background-color: var(--back-ground-divs);
 }
 
-.article__images__position {
-    display: flex;
+.adventure__images__position {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     flex-direction: row;
     align-items: center;
     justify-content: center;

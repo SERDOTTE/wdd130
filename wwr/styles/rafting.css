@@ -126,7 +126,7 @@ nav a:hover {
 
 .article__image {
     width: 200px; 
-    margin-right: 10px 10px;
+    margin-right: 5px;
     border-radius: 10px; 
     border: 1px solid #023047;
 }

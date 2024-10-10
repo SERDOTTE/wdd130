@@ -5,26 +5,30 @@
     --secondary-color: #FB8500; 
     --accent1-color: #219ebc;
     --accent2-color: #8ecae6;
+    --text-color: white;
+    --back-ground-divs: rgba(56, 78, 124, 0.7);
     --paragraph-font: 'Montserrat', sans-serif; 
     --title-font: 'Montserrat', sans-serif, 700;
+    --paragraph2-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-    background-color: rgba(128, 160, 224);
-}
-
-header {
-    position: relative;
+.container {
+    background-color: rgb(137, 168, 229);
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-    font-family: var(--title-font);
-    margin-bottom: 20px;  
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header {
+    display: grid;
+    height: 150px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    position: relative;
 }
 
 .header__image {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -34,26 +38,40 @@ header {
 }
 
 .logo__image {
+    height: 120px;
+    align-self: center;
+    justify-self: center;
     border-radius: 20px;
     border: 1px solid #000000;
-    height: 150px;
+    z-index: 1;
+}
+
+.header__nav {
+    display: flex;
+    align-self: center;
+    justify-self: start;
+    z-index: 1;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
-    background-color: var(--accent1-color);
+    color: var(--text-color);
+    background-color: var( --back-ground-divs);
     font-family: var(--paragraph-font);
     padding: 10px 15px;
     border: 1px solid #000000;
     border-radius: 5px;
     margin: 0 -2px; 
     box-sizing: border-box;
-    color: white; 
 }
 
 nav a:hover {
     background-color: var(--secondary-color);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
@@ -64,9 +82,10 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white; 
+    color: var(--text-color); 
     padding: 0.5px;
-    font-family: var(--paragraph-font);
+    font-family: var(--paragraph2-font);
+    margin-top: 5px;
 }
 
 .hero__image {
@@ -80,11 +99,11 @@ nav a:hover {
 }
 
 .hero h1 {
-    position: absolute;
-    top: 0.1px;
     font-size: 2.0rem;
     z-index: 1; 
     text-align: center; 
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .content__hero {
@@ -92,55 +111,104 @@ nav a:hover {
     width: 100%; 
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 0;
 }
 
 .article {
-    position: absolute;
     display: flex;
     align-items: center;
-    background-color: rgba(128, 160, 224, 0.7); 
-    padding: 10px;
+    background-color: var(--back-ground-divs); 
+    padding: 10px 10px;
     border-radius: 10px; 
     z-index: 2; 
-    max-width: 1000px;
-    margin-top: 5px;
+    max-width: 1000px; 
 }
 
 .article__image {
     width: 200px; 
-    margin-right: 10px;
+    margin-right: 10px 10px;
     border-radius: 10px; 
+    border: 1px solid #023047;
 }
 
 article p {
     font-size: 1.5rem;
 }
 
-.history, .adventure {
+.history {
+    display: flex;
     flex-direction: column;
-    background-color: var(--accent2-color);
-}
-
-.history h2, .adventure h2 {
-    font-size: 2.0rem;
-    z-index: 1; 
-    text-align: center;
-    font-family: var(--paragraph-font); 
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
     color: white; 
-}    
-.history p, section p {
-    max-width: 800px;
-    text-align: center;
-    font-family: var(--paragraph-font); 
-    color: rgb(0, 0, 0); 
+    padding: 5px;
+    font-family: var(--paragraph2-font);
+    background-color: var(--back-ground-divs);
 }
 
-.adventure img {
-    max-width: 100%;
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.history__content {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    margin-top: 5px;
+    color: white;
+    padding: 10px;
+    font-family: var(--paragraph2-font);
+}
+
+.history__image {
+    width: 300px;
     height: auto;
-    display: block;
-    margin: 10px 0;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #023047;
+}
+
+.history__p {
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+    margin-right: 10px;
+    margin-top: 0px;
+    line-height: 1.6;
+
+}
+
+.adventure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: white;
+    padding: 10px;
+    font-family: var(--paragraph2-font);
+    background-color: var(--back-ground-divs);
+}
+
+.article__images__position {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    font-family: var(--paragraph2-font);
+}
+
+.adv__image {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid #023047;
 }
 
 .footer {
@@ -164,8 +232,8 @@ article p {
     align-items: center; 
     width: 30px; 
     height: 30px; 
-    background-color: rgba(128, 160, 224);
-    border: 1px solid rgba(128, 160, 224);
+    background-color:  rgb(137, 168, 229);
+    border: 1px solid rgb(137, 168, 229);
 }
 
 .face__logo, .twitter__logo, .insta__logo {

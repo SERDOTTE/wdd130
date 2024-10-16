@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap);
+
+:root {
+    --primary-color: #023047;
+    --secondary-color: #FB8500; 
+    --accent1-color: #0826a9;
+    --accent2-color: #e7ebed;
+    --text-color: white;
+    --back-ground-divs: rgba(56, 78, 124, 0.7);
+    --paragraph-font: 'Montserrat', sans-serif; 
+    --title-font: 'Montserrat', sans-serif, 700;
+    --paragraph2-font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: var(--paragraph-font);
+}
+
+.form_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: var(--paragraph-font);
+}

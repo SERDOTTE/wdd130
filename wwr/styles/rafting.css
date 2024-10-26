@@ -107,9 +107,9 @@ nav a:hover {
     z-index: -1; 
 }
 
-.hero__h1__index {  /* para ter um fundo  */
+.hero__h1__index {  
     font-size: 2.0rem;
-    margin: 0; /* Remove margens extras */
+    margin: 0; 
     padding: 10px 10px;
     z-index: 2;
 }
@@ -153,7 +153,7 @@ nav a:hover {
 .home__index {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ocupa a altura total da janela */
+    height: 100vh; 
     overflow: hidden;
 }
 
@@ -210,10 +210,6 @@ nav a:hover {
     color: white;
 
 }
-
-
-
-
 
 .hero {
     position: relative;
@@ -489,7 +485,7 @@ input[type="radio"], input[type="checkbox"] {
 
 .radio-group label {
     display: block;
-    margin-bottom: 5px; /* Ajuste o valor conforme necessário */
+    margin-bottom: 5px; 
 }
 
 button {
@@ -534,6 +530,44 @@ figcaption {
     font-size: 1.0rem;
     font-weight: 400;
 }
+
+.trips__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: white; 
+    padding: 5px;
+    font-family: var(--paragraph2-font);
+    background-color: var(--back-ground-divs);
+}
+
+.type__trips {
+    display: flex;
+    flex-direction: row;
+}
+
+.trips__image {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #023047;
+}
+
+.nav_trips {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--paragraph-font);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 -2px; 
+    box-sizing: border-box;
+}
+
+
+
 
 
 

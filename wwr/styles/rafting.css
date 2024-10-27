@@ -183,7 +183,7 @@ nav a:hover {
     height: 320px; 
     padding: 20px;
     z-index: 1;
-    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2); /
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .home__index__content {
@@ -208,7 +208,6 @@ nav a:hover {
     margin-top: 0px;
     line-height: 1.6;
     color: white;
-
 }
 
 .hero {
@@ -546,6 +545,49 @@ figcaption {
 .type__trips {
     display: flex;
     flex-direction: row;
+    gap: 15px;
+    padding: 5px;
+}
+
+.beginners, .intermediate, .advanced {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 80%; /* Para que cada item ocupe a mesma largura */
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.beginners {
+    background-color: #508562;
+}
+
+.beginners:hover {
+    background-color: #2d4e38;
+}
+
+.intermediate {
+    background-color: #BD6666;
+}
+
+.intermediate:hover {
+    background-color: #784444;
+}
+
+.advanced {
+    background-color: #3E3F62;
+}
+
+.advanced:hover {
+    background-color: #1e1f35;
+}
+.p__trips {
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
 }
 
 .trips__image {
@@ -556,9 +598,43 @@ figcaption {
     border: 1px solid #023047;
 }
 
+.table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: var(--primary-color);
+}
+
+.nav__trips__button {
+    margin-top: 10px; /* Espaço de 5px entre a tabela e o botão */
+    display: flex;
+    justify-content: center; /* Centraliza o botão abaixo da tabela */
+}
+
 .nav_trips {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--primary-color);
     font-family: var(--paragraph-font);
     padding: 10px 15px;
     border-radius: 5px;
